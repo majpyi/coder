@@ -18,6 +18,7 @@ public class LRU<K, V> extends LinkedHashMap<K, V> {
 		this.cacheSize = cacheSize;
 	}
 
+	@Override
 	protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
 //		System.out.println(eldest.getKey() + "=" + eldest.getValue());
 		return size() > cacheSize;
@@ -25,7 +26,7 @@ public class LRU<K, V> extends LinkedHashMap<K, V> {
 
 	@Override
 	public V get(Object key) {
-		if(super.get(key)==null){
+		if (super.get(key) == null) {
 //			return (V) (new Integer(-1));
 			return (V) (Integer.valueOf(-1));
 		}
@@ -33,7 +34,7 @@ public class LRU<K, V> extends LinkedHashMap<K, V> {
 	}
 
 	public static void main(String[] args) {
-		LRU<Integer,Integer> cache = new LRU<>(2);
+		LRU<Integer, Integer> cache = new LRU<>(2);
 		cache.put(1, 1);
 		cache.put(2, 2);
 //		cache.get(1);       // 返回  1

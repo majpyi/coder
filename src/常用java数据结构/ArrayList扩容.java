@@ -26,6 +26,6 @@ public class ArrayList扩容 {
 
 		HashMap hashMap = new HashMap();
 		hashMap.put(1,1);
-		Class.forName("蘑菇街19实习.A");
+		Class.forName("笔试.蘑菇街19实习.A");
 	}
 }

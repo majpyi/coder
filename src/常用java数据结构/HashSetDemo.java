@@ -14,6 +14,7 @@ public class HashSetDemo {
 		TreeSet treeSet = new TreeSet();
 		hashSet.add(null);
 		hashSet.add(null);
+//		new Object().equals();
 		System.out.println(hashSet.size());
 	}
 }

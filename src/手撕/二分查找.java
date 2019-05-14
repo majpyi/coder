@@ -8,7 +8,7 @@ package 手撕;
 public class 二分查找 {
 	public static void main(String[] args) {
 
-		System.out.println(binarySearch(new int[]{1,2,3,4},1));
+		System.out.println(binarySearch1(new int[]{1,2,3,4},5));
 	}
 
 	static int binarySearch(int[] arr, int target) {
@@ -29,6 +29,25 @@ public class 二分查找 {
 //			mid = (l + r ) / 2;
 
 		}
+		return -1;
+	}
+	static int binarySearch1(int[] arr, int target){
+		int l = 0;
+		int r = arr.length-1;
+		int mid = l+(r-l)/2;
+
+		while (l<=r){
+			if(arr[mid] == target){
+				return mid;
+			}
+			if(target<arr[mid]){
+				r = mid-1;
+			}else {
+				l = mid+1;
+			}
+			mid = l+(r-l)/2;
+		}
+
 		return -1;
 	}
 }

@@ -83,9 +83,13 @@ public class QuickSort {
 	static int partition(int[] t, int l, int r) {
 		int pivot = t[l];
 		while (l < r) {
-			while (t[r] >= pivot && l < r) r--;
+			while (t[r] >= pivot && l < r) {
+				r--;
+			}
 			t[l] = t[r];
-			while (t[l] <= pivot && l < r) l++;
+			while (t[l] <= pivot && l < r) {
+				l++;
+			}
 			t[r] = t[l];
 		}
 		t[l] = pivot;

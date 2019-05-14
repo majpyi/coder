@@ -26,7 +26,8 @@ public class T35数组中的逆序对 {
 			if (a[i] < a[j]) {
 				temp[k++] = a[i++];
 			} else {
-				num += (mid - i + 1);
+				//当前j与i到前半部的数字是逆序的
+				num += (mid + 1 - i);
 				temp[k++] = a[j++];
 			}
 		}

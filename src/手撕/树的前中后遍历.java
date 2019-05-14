@@ -108,6 +108,7 @@ public class 树的前中后遍历 {
 		}
 		LinkedList<TreeNode> queue = new LinkedList<>();
 		queue.offer(root);
+		queue.add(root);
 		while (!queue.isEmpty()) {
 			TreeNode node = queue.poll();
 			System.out.print(node.val + "  ");
@@ -147,9 +148,10 @@ public class 树的前中后遍历 {
 		a.levelTraverse(t);
 		System.out.println();
 //		a.preOrderTraverse1(t);
-		a.preOrderTraverse2(t);
-		System.out.println();
+//		a.preOrderTraverse2(t);
+//		System.out.println();
 		a.depthOrderTraverse(t);
+//		a.levelTraverse(t);
 	}
 
 }

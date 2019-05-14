@@ -76,6 +76,13 @@ public class HeapSort {
 //	}
 //
 //	// 交换元素位置
+
+	/**
+	 *
+	 * @param arr
+	 * @param index1
+	 * @param index2
+	 */
 	private static void swap(int[] arr, int index1, int index2) {
 		int tmp = arr[index1];
 		arr[index1] = arr[index2];
@@ -90,7 +97,8 @@ public class HeapSort {
 		}
 
 		for (int i = arr.length - 1; i > 0; i--) {
-			swap(arr, i, 0);   // 因为这里i索引的元素已经有序了，所以不需要在进行排序了，相当于，数组的长度减少了1，那么下一步
+			// 因为这里i索引的元素已经有序了，所以不需要在进行排序了，相当于，数组的长度减少了1，那么下一步
+			swap(arr, i, 0);
 			shiftDown(arr, i, 0);
 		}
 
@@ -100,10 +108,12 @@ public class HeapSort {
 
 		while (2 * i + 1 < n) {
 			int j = 2 * i + 1;
-			if (j + 1 < n && arr[j + 1] > arr[j])
+			if (j + 1 < n && arr[j + 1] > arr[j]) {
 				j++;
-			if (arr[i] >= arr[j])
+			}
+			if (arr[i] >= arr[j]) {
 				break;
+			}
 			swap(arr, i, j);
 			i = j;
 		}
