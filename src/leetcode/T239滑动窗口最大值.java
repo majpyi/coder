@@ -8,7 +8,7 @@ import java.util.*;
  * @Date: 2019-03-01 08:42
  * @Description: https://leetcode-cn.com/problems/sliding-window-maximum/
  **/
-public class 滑动窗口最大值239 {
+public class T239滑动窗口最大值 {
 
 	public static int[] maxSlidingWindow(int[] nums, int k) {
 		if (nums.length == 0) {

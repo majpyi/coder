@@ -61,5 +61,19 @@ public class T1 {
 		}
 
 
+		int sum = 0,ans = 0;
+		while(sum<m){
+			for(int i=n-1;i>=0;i--){
+				if(sum+1>=coin[i]){
+					sum+=coin[i];
+					ans++;
+					break;
+				}
+			}
+		}
 	}
+
+
+
+
 }

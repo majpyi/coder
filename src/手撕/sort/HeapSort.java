@@ -104,6 +104,7 @@ public class HeapSort {
 
 	}
 
+	// 每次都是从0的索引，开始进行shiftDown
 	private static void shiftDown(int[] arr, int n, int i) {
 
 		while (2 * i + 1 < n) {

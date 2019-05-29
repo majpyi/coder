@@ -25,7 +25,7 @@ public class T849到最近的人的最大距离 {
 					tag++;
 				}
 			}
-			System.out.println(Arrays.toString(re));
+//			System.out.println(Arrays.toString(re));
 		}
 		System.out.println(Arrays.toString(re));
 		return Arrays.stream(re).max().getAsInt();

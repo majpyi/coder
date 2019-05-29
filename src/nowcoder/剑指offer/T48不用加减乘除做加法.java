@@ -5,7 +5,7 @@ package nowcoder.剑指offer;
  * @Date: 2019-03-09 12:40
  * @Description: 不用加减乘除做加法
  **/
-public class T48 {
+public class T48不用加减乘除做加法 {
 	public static int Add(int num1, int num2) {
 		while (num2 != 0) {
 			int temp = num1 ^ num2;

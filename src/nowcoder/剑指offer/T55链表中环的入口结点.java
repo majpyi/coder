@@ -5,7 +5,7 @@ package nowcoder.剑指offer;
  * @Date: 2019-03-10 10:06
  * @Description: 链表中环的入口结点
  **/
-public class T55 {
+public class T55链表中环的入口结点 {
 	//	public static ListNode EntryNodeOfLoop(ListNode pHead) {
 //		if (pHead == null) {
 //			return null;

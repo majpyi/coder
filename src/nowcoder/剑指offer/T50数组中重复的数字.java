@@ -5,7 +5,7 @@ package nowcoder.剑指offer;
  * @Date: 2019-03-09 12:41
  * @Description: 数组中重复的数字
  **/
-public class T50 {
+public class T50数组中重复的数字 {
 	public static boolean duplicate(int numbers[],int length,int [] duplication) {
 		if (numbers == null || length == 0 || length == 1)
 			return false;

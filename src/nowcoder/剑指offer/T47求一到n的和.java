@@ -5,7 +5,7 @@ package nowcoder.剑指offer;
  * @Date: 2019-03-09 12:38
  * @Description: 求1+2+3+...+n
  **/
-public class T47 {
+public class T47求一到n的和{
 	public static int Sum_Solution(int n) {
 		int sum = n;
 		if(n<=0){

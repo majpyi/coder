@@ -5,9 +5,9 @@ import java.util.LinkedList;
 /**
  * @Author: Mr.M
  * @Date: 2019-03-09 12:37
- * @Description: 孩子们的游戏(圆圈中最后剩下的数)
+ * @Description: 孩子们的游戏(圆圈中最后剩下的数)  约瑟夫圈
  **/
-public class T46 {
+public class T46孩子们的游戏 {
 	public  static int LastRemaining_Solution(int n, int m) {
 		LinkedList<Integer> list = new LinkedList<Integer>();
 		int bt = 0;

@@ -7,20 +7,16 @@ import java.util.HashMap;
  * @Date: 2019-03-10 10:36
  * @Description: 删除链表中重复的结点
  **/
-public class T56 {
+public class T56删除链表中重复的结点 {
 	public static ListNode deleteDuplication(ListNode pHead) {
 		pHead = getListNode(pHead);
-		if (pHead == null) return null;
-
-		pHead = getListNode(pHead);
-
 		return pHead;
 	}
 
 	private static ListNode getListNode(ListNode pHead) {
 		ListNode x = pHead;
 
-		if(pHead==null){
+		if (pHead == null) {
 			return null;
 		}
 		while (pHead != null && pHead.next != null && pHead.val == pHead.next.val) {  //  这里需要判断一下pHead是不是为空,
@@ -33,11 +29,33 @@ public class T56 {
 
 		if (pHead == null) {
 			return null;
-		}else {
-			x.next = pHead ;
+		} else {
+			x.next = pHead;
 			getListNode(pHead);
 		}
 		return pHead;
+	}
+
+
+	public static ListNode deleteDuplication1(ListNode pHead) {
+		ListNode result;
+		ListNode temp = pHead;
+		ListNode index = new ListNode(1);
+		index.next = pHead;
+		result = index;
+		while (temp != null) {
+			if (temp.next != null && temp.next.val == temp.val) {
+				while (temp.next != null && temp.next.val == temp.val) {
+					temp = temp.next;
+				}
+				temp = temp.next;
+				index.next = temp;
+			} else {
+				index = index.next;
+				temp = temp.next;
+			}
+		}
+		return result.next;
 	}
 
 
@@ -55,12 +73,12 @@ public class T56 {
 //		b.next = b1;
 //		b1.next = b2;
 //		b2.next = c;
-		ListNode a = ListNode.build(new int[]{1,2,3,3,4,4,5});
+		ListNode a = ListNode.build(new int[]{1, 2, 3, 3, 4, 4, 5});
 //		System.out.println();
-		ListNode x = deleteDuplication(a);
-		while (x!=null){
+		ListNode x = deleteDuplication1(a);
+		while (x != null) {
 			System.out.println(x.val);
-			x=x.next;
+			x = x.next;
 		}
 	}
 }
