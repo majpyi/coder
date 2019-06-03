@@ -10,4 +10,7 @@ public class ClassDemo extends  ClassLoader {
 		ClassDemo classDemo =new ClassDemo();
 //		classDemo.loadClass();
 	}
+	static {
+		System.out.println("当前类已经被加载");
+	}
 }
