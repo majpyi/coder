@@ -1,4 +1,4 @@
-package 常用java数据结构;
+package 集合;
 
 import java.util.HashMap;
 import java.util.Map;

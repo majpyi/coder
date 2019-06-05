@@ -13,10 +13,22 @@ import java.util.List;
 class Interval {
     int start, end;
 
-    Interval(int start, int end) {
+    public Interval(int start, int end) {
         this.start = start;
         this.end = end;
     }
+	public Interval(Integer start) {
+		this.start = start;
+		this.end = end;
+	}
+
+	@Override
+	public String toString() {
+		return "Interval{" +
+			"start=" + start +
+			", end=" + end +
+			'}';
+	}
 }
 
 public class T920会议室 {

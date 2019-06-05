@@ -1,6 +1,6 @@
 package leetcode;
 
-import 常用java数据结构.TreeNode;
+import 集合.TreeNode;
 
 import java.util.ArrayList;
 
@@ -43,11 +43,11 @@ public class T236二叉树的最近公共祖先 {
 		System.out.println(lowestCommonAncestor(b,a1,a2).val);
 	}
 
-	private static 常用java数据结构.TreeNode buildTree(Integer[] a) {
-		ArrayList<常用java数据结构.TreeNode> ar = new ArrayList<>();
+	private static 集合.TreeNode buildTree(Integer[] a) {
+		ArrayList<集合.TreeNode> ar = new ArrayList<>();
 		for (int i = 0; i < a.length; i++) {
 			if (a[i] != null) {
-				ar.add(new 常用java数据结构.TreeNode(a[i]));
+				ar.add(new 集合.TreeNode(a[i]));
 			} else {
 				ar.add(null);
 			}

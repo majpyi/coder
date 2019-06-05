@@ -1,6 +1,4 @@
-package 常用java数据结构;
-
-import java.time.temporal.ValueRange;
+package 集合;
 
 /**
  * @Author: Mr.M

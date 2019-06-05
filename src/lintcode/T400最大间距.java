@@ -43,8 +43,9 @@ public class T400最大间距 {
 
 
 	public int maximumGap(int[] num) {
-		if (num == null || num.length < 2)
+		if (num == null || num.length < 2) {
 			return 0;
+		}
 		// get the max and min value of the array
 		int min = num[0];
 		int max = num[0];

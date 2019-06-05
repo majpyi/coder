@@ -1,6 +1,6 @@
 package 手撕;
 
-import 常用java数据结构.ListNode;
+import 集合.ListNode;
 /**
  * @Author: Mr.M
  * @Date: 2019-05-06 16:35

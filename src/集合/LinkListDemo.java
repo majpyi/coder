@@ -1,4 +1,4 @@
-package 常用java数据结构;
+package 集合;
 
 /**
  * @Author: Mr.M
@@ -8,7 +8,6 @@ package 常用java数据结构;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.util.Iterator;
 import java.util.LinkedList;
 
 public class LinkListDemo {

@@ -1,6 +1,6 @@
 package leetcode;
 
-import 常用java数据结构.ListNode;
+import 集合.ListNode;
 
 /**
  * https://leetcode-cn.com/problems/reverse-linked-list/

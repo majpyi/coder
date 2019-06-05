@@ -1,4 +1,4 @@
-package 常用java数据结构;
+package 集合;
 
 /**
  * @Author: Mr.M
@@ -28,7 +28,9 @@ class Customer implements Comparable {
 
 	@Override
 	public int compareTo(Object o) {
-		return 0;
+//		return 0;
+		Customer a = (Customer) o;
+		return this.id - a.id;
 	}
 }
 
@@ -51,7 +53,8 @@ public class PriorityQueueExample {
 		}
 
 		//优先队列使用示例
-		Queue<Customer> customerPriorityQueue = new PriorityQueue<>(7, idComparator);
+//		Queue<Customer> customerPriorityQueue = new PriorityQueue<>(7, idComparator);
+		Queue<Customer> customerPriorityQueue = new PriorityQueue<>(7);
 		addDataToQueue(customerPriorityQueue);
 		pollDataFromQueue(customerPriorityQueue);
 

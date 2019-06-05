@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import 常用java数据结构.TreeNode;
+import 集合.TreeNode;
 
 
 /**

@@ -1,4 +1,4 @@
-package 常用java数据结构;
+package 集合;
 
 /**
  * @Author: Mr.M
@@ -7,7 +7,6 @@ package 常用java数据结构;
  **/
 
 import java.util.*;
-import java.io.*;
 
 public class ArrayToCollection {
 	public static void main(String args[]) {

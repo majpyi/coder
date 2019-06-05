@@ -1,7 +1,6 @@
-package 常用java数据结构;
+package 集合;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @Author: Mr.M

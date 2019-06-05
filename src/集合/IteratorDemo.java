@@ -1,4 +1,4 @@
-package 常用java数据结构;
+package 集合;
 
 /**
  * @Author: Mr.M
@@ -9,7 +9,6 @@ package 常用java数据结构;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 /*
  * 问题?

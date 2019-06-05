@@ -14,7 +14,7 @@ public class n2 {
 		MyThread thread = test.new MyThread();
 		thread.start();
 		try {
-			Thread.currentThread().sleep(2000);
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 		}
 		thread.interrupt();

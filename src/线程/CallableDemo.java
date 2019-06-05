@@ -59,3 +59,62 @@ public class CallableDemo {
 	}
 
 }
+
+
+
+class Test {
+	public static void main(String[] args) {
+		ExecutorService executor = Executors.newCachedThreadPool();
+		Task task = new Task();
+		Future<Integer> future = executor.submit(task);
+
+		/**
+		 接下来就可以通过future来获取一些关于Task的运行信息了：
+		 比如：future.get();来获取最后执行结果
+		 future.isDown();来判断是否完成
+		 等等...
+		 **/
+
+		executor.shutdown();
+
+	}
+}
+
+class Task implements Callable<Integer>{
+	@Override
+	public Integer call() throws Exception {
+		int sum = 0;
+		//do something;
+		return sum;
+	}
+}
+
+
+class Test1 {
+	public static void main(String[] args) {
+		//第一种方式
+		ExecutorService executor = Executors.newCachedThreadPool();
+		Task task = new Task();
+		FutureTask<Integer> futureTask = new FutureTask<Integer>(task);
+		executor.submit(futureTask);
+
+
+		//第二种方式
+		/**
+		 Task task = new Task();
+		 FutureTask<Integer> futureTask = new FutureTask<Integer>(task);
+		 Thread thread = new Thread(futureTask);
+		 thread.start();
+		 **/
+
+		/**
+		 接下来就可以通过futureTask来获取一些关于Task的运行信息了：
+		 比如：futureTask.get();来获取最后执行结果
+		 futureTask.isDown();来判断是否完成
+		 等等...
+		 **/
+
+		executor.shutdown();
+	}
+}
+
