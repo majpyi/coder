@@ -8,6 +8,10 @@ import java.util.*;
  * @Description:
  **/
 public class T1668区间最小覆盖 {
+
+	/**
+	 * 	这个方法不行，因为最大值有很多个，比如5有很多个，那么你选哪一个区间的最大值会影响接下来的最优解。
+ 	 */
 	public static int getAns(List<Interval> a) {
 		// write your code here
 		Collections.sort(a, new Comparator<Interval>() {
@@ -32,7 +36,7 @@ public class T1668区间最小覆盖 {
 				tag[i - start]++;
 			}
 		}
-//		System.out.println(Arrays.toString(tag));
+		System.out.println(Arrays.toString(tag));
 
 		int stop = Arrays.stream(tag).max().getAsInt();
 		int re = 0;
@@ -50,6 +54,7 @@ public class T1668区间最小覆盖 {
 //			System.out.println(index);
 //			System.out.println(stop);
 			ArrayList<Interval> r = new ArrayList<>();
+			System.out.println(start + index);
 			for (Interval x : a) {
 				if (x.start <= (index + start) && x.end >= (index + start)) {
 					for (int i = x.start; i <= x.end; i++) {
@@ -58,6 +63,8 @@ public class T1668区间最小覆盖 {
 					r.add(x);
 				}
 			}
+
+			System.out.println(r);
 
 			for (Interval x : r) {
 				a.remove(x);
@@ -101,6 +108,7 @@ public class T1668区间最小覆盖 {
 
 		for (int i = 1; i < a.size(); i++) {
 			if (temp.end < a.get(i).start) {
+				System.out.println(temp.end);
 				temp = a.get(i);
 				ans++;
 				continue;
@@ -108,6 +116,7 @@ public class T1668区间最小覆盖 {
 //			temp.start = a.get(i).start;
 			temp.end = Math.min(temp.end, a.get(i).end);
 		}
+		System.out.println(temp.end);
 		return ans;
 	}
 
@@ -126,6 +135,11 @@ public class T1668区间最小覆盖 {
 			rr.add(new Interval(Integer.valueOf(re[i]), Integer.valueOf(re[i + 1])));
 		}
 		System.out.println(getAns1(rr));
+		ArrayList rr1 = new ArrayList();
+		for (int i = 0; i < re.length; i += 2) {
+			rr1.add(new Interval(Integer.valueOf(re[i]), Integer.valueOf(re[i + 1])));
+		}
+		System.out.println(getAns(rr1));
 	}
 
 }
