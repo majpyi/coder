@@ -42,7 +42,9 @@ public class T75颜色分类 {
 				tmp = nums[curr];
 				nums[curr] = nums[p2];
 				nums[p2--] = tmp;
-			} else curr++;
+			} else {
+				curr++;
+			}
 		}
 	}
 

@@ -7,7 +7,7 @@ import java.util.*;
  * @Date: 2019-02-25 12:54
  * @Description: https://leetcode-cn.com/problems/4sum/submissions/
  **/
-public class 四数之和18 {
+public class T18四数之和 {
     public List<List<Integer>> fourSum(int[] nums, int target) {
 //        ArrayList<List<Integer>> re = new ArrayList<>();
         HashSet<List<Integer>> re1 = new HashSet<>();

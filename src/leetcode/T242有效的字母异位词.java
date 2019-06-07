@@ -8,7 +8,7 @@ import java.util.HashMap;
  * @Date: 2019-02-25 12:42
  * @Description: https://leetcode-cn.com/problems/valid-anagram/
  **/
-public class 有效的字母异位词242 {
+public class T242有效的字母异位词 {
     ///////////////////////////////
     public boolean isAnagram(String s, String t) {
         if(s.length()!=t.length())return false;

@@ -5,7 +5,7 @@ package leetcode;
  * @Date: 2019-02-27 10:56
  * @Description: https://leetcode-cn.com/problems/sudoku-solver/submissions/
  **/
-class 解数独37 {
+public class T37解数独{
 	public void solveSudoku(char[][] board) {
 		if (board == null || board.length == 0) {
 			return;

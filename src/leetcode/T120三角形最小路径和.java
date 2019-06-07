@@ -7,7 +7,7 @@ import java.util.List;
  * @Date: 2019-02-28 17:25
  * @Description: https://leetcode-cn.com/problems/triangle/
  **/
-public class 三角形最小路径和120 {
+public class T120三角形最小路径和 {
 	public int minimumTotal(List<List<Integer>> triangle) {
 //		int[][] re  = new int[][];
 		for(int i=triangle.size()-2;i>=0;i--){

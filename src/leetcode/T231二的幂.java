@@ -5,7 +5,7 @@ package leetcode;
  * @Date: 2019-02-28 15:35
  * @Description: https://leetcode-cn.com/problems/power-of-two/
  **/
-public class 二的幂231 {
+public class T231二的幂 {
 	public boolean isPowerOfTwo(int n) {
 
 	//  三种写法

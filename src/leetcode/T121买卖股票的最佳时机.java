@@ -5,7 +5,7 @@ package leetcode;
  * @Date: 2019-02-28 18:44
  * @Description: https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
  **/
-public class 买卖股票的最佳时机121 {
+public class T121买卖股票的最佳时机 {
 	public int maxProfit(int[] prices) {
 		if (prices.length==0){
 			return 0;

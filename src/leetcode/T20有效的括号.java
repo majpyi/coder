@@ -8,7 +8,7 @@ import java.util.Stack;
  * @Date: 2019-02-23 20:03
  * @Description: https://leetcode-cn.com/problems/valid-parentheses/submissions/
  **/
-public class 有效的括号20 {
+public class T20有效的括号 {
     public static boolean isValid1(String s) {
         Stack<Character> st1 = new Stack<>();
         Stack<Character> st2 = new Stack<>();

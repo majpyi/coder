@@ -5,7 +5,7 @@ package leetcode;
  * @Date: 2019-02-28 15:26
  * @Description: https://leetcode-cn.com/problems/number-of-1-bits/
  **/
-public class 位1的个数191 {
+public class T191位1的个数 {
 	// you need to treat n as an unsigned value
 	public int hammingWeight(int n) {
 		int i = 0;
@@ -23,7 +23,7 @@ public class 位1的个数191 {
 
 
 	public static void main(String[] args) {
-		位1的个数191 a = new 位1的个数191();
+		T191位1的个数 a = new T191位1的个数();
 		System.out.println(a.hammingWeight(7));
 	}
 }

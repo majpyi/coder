@@ -9,7 +9,7 @@ import java.util.Map;
  * @Date: 2019-02-25 12:49
  * @Description: https://leetcode-cn.com/problems/two-sum/solution/
  **/
-public class 两数之和1 {
+public class T1两数之和 {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {

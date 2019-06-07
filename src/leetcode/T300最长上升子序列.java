@@ -1,6 +1,8 @@
 package leetcode;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * @Author: Mr.M
@@ -61,6 +63,27 @@ public class T300最长上升子序列 {
 	}
 
 
+	public static int lengthOfLIS3(int[] nums) {
+		if (nums == null || nums.length == 0) {
+			return 0;
+		}
+		ArrayList<Integer> arrayList = new ArrayList<>();
+		arrayList.add(nums[0]);
+		for (int i = 1; i < nums.length; i++) {
+			if (nums[i] > arrayList.get(arrayList.size()-1)) {
+				arrayList.add(nums[i]);
+			} else {
+				int index = Collections.binarySearch(arrayList, nums[i]);
+				if (index < 0) {
+					index = -index - 1;
+				}
+				arrayList.remove(index);
+				arrayList.add(index, nums[i]);
+			}
+		}
+		System.out.println(arrayList);
+		return arrayList.size();
+	}
 	public static void main(String[] args) {
 		System.out.println(lengthOfLIS2(new int[]{10, 9, 2, 5, 3, 7, 101, 18}));
 		System.out.println(lengthOfLIS2(new int[]{1, 2, 4, 3, 5, 4, 7, 2}));

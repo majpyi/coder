@@ -5,7 +5,7 @@ package leetcode;
  * @Date: 2019-02-28 17:19
  * @Description: https://leetcode-cn.com/problems/climbing-stairs/submissions/
  **/
-public class 爬楼梯70 {
+public class T70爬楼梯 {
 	static int[] re = new int[1000];
 	static  {
 		re[0] = 1;

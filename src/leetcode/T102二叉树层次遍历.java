@@ -12,7 +12,7 @@ import 集合.TreeNode;
  * @Date: 2019-02-26 10:47
  * @Description: https://leetcode-cn.com/problems/binary-tree-level-order-traversal/submissions/
  **/
-public class 二叉树层次遍历102 {
+public class T102二叉树层次遍历 {
 	public static List<List<Integer>> levelOrder(TreeNode root) {
 		List<List<Integer>> ree = new LinkedList<>();
 		LinkedList<Integer> re = new LinkedList<>();

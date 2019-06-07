@@ -8,7 +8,7 @@ import java.util.Random;
  * @Date: 2019-02-26 20:34
  * @Description: https://leetcode-cn.com/problems/sqrtx/solution/
  **/
-public class x的平方根69 {
+public class T69x的平方根 {
 //	public static int mySqrt(int x) {
 //		if (x == 0 || x == 1) {
 //			return x;

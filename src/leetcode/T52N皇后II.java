@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
-class N皇后II52 {
+class T52N皇后II {
 	static HashSet<Integer> col ;
 	static HashSet<Integer> pie ;
 	static HashSet<Integer> na ;

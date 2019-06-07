@@ -5,7 +5,7 @@ package leetcode;
  * @Date: 2019-03-02 13:37
  * @Description: https://leetcode-cn.com/problems/number-of-islands/
  **/
-public class 岛屿的个数200 {
+public class T200岛屿的个数 {
 	public int numIslands(char[][] grid) {
 		int num = 0;
 		for (int i = 0; i < grid.length; i++) {

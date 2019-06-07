@@ -5,7 +5,7 @@ package leetcode;
  * @Date: 2019-02-27 10:58
  * @Description: https://leetcode-cn.com/problems/valid-sudoku/solution/
  **/
-class 有效的数独36 {
+public class T36有效的数独 {
 	public boolean isValidSudoku(char[][] board) {
 		for (int i = 0; i < board.length; i++) {
 //			for (int j = 0; j < board.length; j++) {
