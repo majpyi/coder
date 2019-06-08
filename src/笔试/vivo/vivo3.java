@@ -10,7 +10,7 @@ import java.util.HashMap;
  * @Date: 2019-06-04 19:24
  * @Description:
  **/
-class sf {
+public class vivo3 {
 
 	public static void main(String[] args) {
 
